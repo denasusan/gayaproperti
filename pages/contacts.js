@@ -18,12 +18,12 @@ export default function Contacts() {
         {
             "name": "Instagram",
             "image": <Instagram fontSize="large" />,
-            "link": "http://wa.me/628112347615?text=Hai Admin Gaya Properti, saya ingin bertanya..."
+            "link": "https://www.instagram.com/gayaproperti/"
         },
         {
             "name": "TikTok",
             "image": <MusicNoteRounded fontSize="large" />,
-            "link": "http://wa.me/628112347615?text=Hai Admin Gaya Properti, saya ingin bertanya..."
+            "link": "https://www.tiktok.com/@gayaproperti"
         },
     ]);
 
@@ -48,15 +48,15 @@ export default function Contacts() {
                             <div class="flex items-center mx-auto ">
                                 {
                                     contacts.map((item) => {
-                                        return <div className="flex cursor-pointer px-10 pt-10 flex-col justify-center items-center shadow-xl rounded-3xl mx-4">
-                                            <div className="rounded-full w-24 h-24 shadow-xl flex justify-center items-center">
-                                                <img src={`${item.image}`} className="w-auto h-12" />
-                                            </div>
-                                            <div className="flex justify-center items-center pb-4" onClick={() =>
+                                        return <div className="flex cursor-pointer px-10 pt-10 flex-col justify-center items-center shadow-xl rounded-3xl mx-4" onClick={() =>
                                                 window.open(
-                                                    `${item.no}`
+                                                    `${item.link}`
                                                 )
                                             }>
+                                            <div className="rounded-full w-24 h-24 shadow-xl flex justify-center items-center">
+                                                <img src={`${item.image}`} className="w-auto h-8" />
+                                            </div>
+                                            <div className="flex justify-center items-center pb-4">
                                                 <p className="text-14px font-semibold text-blue-primary pt-4 pb-2 mr-1">{item.name}</p>
                                                 <WhatsApp className=" text-green-700" />
                                             </div>
@@ -70,17 +70,17 @@ export default function Contacts() {
                             <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 w-auto lg:w-4/12 mx-auto">
                                 {
                                     socialMedia.map((item) => {
-                                        return <div className="flex cursor-pointer flex-col px-10 pt-10 justify-center items-center shadow-xl rounded-3xl m-4">
+                                        return <div className="flex cursor-pointer flex-col px-10 pt-10 justify-center items-center shadow-xl rounded-3xl m-4" onClick={() =>
+                                                window.open(
+                                                    `${item.link}`
+                                                )
+                                            }>
                                             <div className="rounded-full w-24 h-24 text-white shadow-xl flex justify-center items-center">
                                                 <div className="w-14 h-14 rounded-full flex justify-center items-center bg-blue-primary">
                                                     {item.image}
                                                 </div>
                                             </div>
-                                            <div className="flex justify-center items-center pb-4" onClick={() =>
-                                                window.open(
-                                                    `${item.no}`
-                                                )
-                                            }>
+                                            <div className="flex justify-center items-center pb-4">
                                                 <p className="text-14px font-semibold text-blue-primary pt-4 pb-2 mr-1">{item.name}</p>
 
                                             </div>
