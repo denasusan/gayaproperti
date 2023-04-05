@@ -11,7 +11,7 @@ export default function Contacts() {
         {
             "name": "Gaya Properti",
             "image": "/images/logo-small.png",
-            "link": "http://wa.me/628112347615?text=Hai Admin Gaya Properti, saya ingin bertanya..."
+            "link": "http://wa.me/6281779966153?text=Hai Admin Gaya Properti, saya ingin bertanya..."
         },
     ]);
     const [socialMedia, setSocialMedia] = useState([

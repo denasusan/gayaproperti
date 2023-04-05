@@ -152,7 +152,7 @@ export default function Home() {
                 </div>
                 <div className='fixed cursor-pointer lg:bottom-8 bottom-4 lg:right-8 right-5 z-30 rounded-full' onClick={() =>
                     window.open(
-                      `http://wa.me/628112347615?text=Hai Admin Gaya Properti, saya ingin bertanya...`
+                      `http://wa.me/6281779966153?text=Hai Admin Gaya Properti, saya ingin bertanya...`
                     )
                   }>
                   <WhatsAppIcon />

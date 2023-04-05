@@ -18,13 +18,17 @@ export default function Footer() {
                             </div>
                             <div className='flex mt-6 cursor-pointer' onClick={() =>
                                 window.open(
-                                    `http://wa.me/628112347615?text=Hai Admin Gaya Properti, saya ingin bertanya...`
+                                    `http://wa.me/6281779966153?text=Hai Admin Gaya Properti, saya ingin bertanya...`
                                 )
                             }>
                                 <Call fontSize='small' className='mr-1' />
-                                <p>+62 811-2347-615</p>
+                                <p>+62 8177-9966-153</p>
                             </div>
-                            <div className='flex mt-1 cursor-pointer'>
+                            <div className='flex mt-1 cursor-pointer' onClick={() =>
+                                window.open(
+                                    `https://mail.google.com/mail/?view=cm&fs=1&to=gayaproperti.co@gmail.com`
+                                )
+                            }>
                                 <Mail fontSize='small' className='mr-1' />
                                 <p className=''>gayaproperti.co@gmail.com</p>
                             </div>
